@@ -6,7 +6,7 @@
 
 This contains everything you need to run your app locally.
 
-View your app in AI Studio: https://ai.studio/apps/8ebf8985-5d80-4548-afc7-2b7bc6eb8c94
+View your website: https://agent-watch-fawn.vercel.app/
 
 ## Run Locally
 
