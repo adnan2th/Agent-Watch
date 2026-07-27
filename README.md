@@ -157,3 +157,120 @@ External APIs
 | Database   | Firebase      |
 | AI         | Google Gemini |
 | Build Tool | Vite          |
+
+
+<img width="3138" height="1444" alt="Capturdqe" src="https://github.com/user-attachments/assets/760824bf-1a7e-459d-bbf6-8a8d019aa8df" />
+
+
+
+## 🚀 How to Run the Project
+
+### Prerequisites
+
+Before you begin, ensure you have the following installed:
+
+- **Node.js** (v18 or later)
+- **npm** or **yarn**
+- **Git**
+- A **Firebase** project
+- A **Google Gemini API Key**
+
+---
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/<your-username>/AgentWatch.git
+cd AgentWatch
+```
+
+---
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+---
+
+### 3. Configure Environment Variables
+
+Create a `.env` file in the project root.
+
+```bash
+cp .env.example .env
+```
+
+Add your API keys and configuration values:
+
+```env
+# Google Gemini
+GEMINI_API_KEY=your_gemini_api_key
+
+# Firebase
+VITE_FIREBASE_API_KEY=your_api_key
+VITE_FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
+VITE_FIREBASE_PROJECT_ID=your_project_id
+VITE_FIREBASE_STORAGE_BUCKET=your_project.appspot.com
+VITE_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
+VITE_FIREBASE_APP_ID=your_app_id
+
+# Server
+PORT=5000
+```
+
+---
+
+### 4. Start the Development Server
+
+```bash
+npm run dev
+```
+
+The application will be available at:
+
+```text
+Frontend: http://localhost:5173
+Backend : http://localhost:5000
+```
+
+---
+
+### 5. Build for Production
+
+```bash
+npm run build
+```
+
+---
+
+### 6. Preview the Production Build
+
+```bash
+npm run preview
+```
+
+---
+
+## 🧪 Available Scripts
+
+| Command | Description |
+|---------|-------------|
+| `npm install` | Install project dependencies |
+| `npm run dev` | Start the development server |
+| `npm run build` | Build the project for production |
+| `npm run preview` | Preview the production build locally |
+| `npm run lint` | Run the linter (if configured) |
+
+---
+
+## ✅ Verify Installation
+
+After starting the application:
+
+- Open **http://localhost:5173**
+- Ensure the dashboard loads successfully.
+- Verify the backend API is running.
+- Confirm Firebase connects without errors.
+- Test that Google Gemini integration is working.
