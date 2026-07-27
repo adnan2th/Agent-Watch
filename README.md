@@ -69,6 +69,54 @@ Core capabilities include:
 - Compliance report generation
 - Complete audit trail
 
+## 📊 Market Opportunity & Industry Insights
+
+The rapid rise of **Agentic AI** is transforming enterprise software by enabling autonomous systems to reason, plan, and execute complex workflows with minimal human intervention. While AI adoption continues to accelerate, **governance, security, and financial oversight have not kept pace**, creating a significant opportunity for AI governance platforms.
+
+### Industry Statistics
+
+| Industry Insight | Statistic | Source |
+|------------------|:---------:|--------|
+| Organizations not prepared to adopt AI in day-to-day operations | **86%** | McKinsey – *The State of Organizations 2026* |
+| Organizations deploying AI in at least one business function | **88%** | McKinsey – *The State of AI 2025* |
+| Organizations experimenting with AI agents | **62%** | McKinsey – *The State of AI 2025* |
+| Executives planning to increase AI budgets because of AI agents | **88%** | PwC AI Agent Survey |
+| Companies already adopting AI agents | **79%** | PwC AI Agent Survey |
+
+---
+
+## 🚨 The Enterprise AI Governance Gap
+
+As organizations deploy increasingly autonomous AI agents, they face several critical challenges:
+
+- 💸 **Uncontrolled AI spending** and budget overruns
+- 🔁 **Infinite reasoning** or tool-calling loops
+- 🛡️ **Prompt injection** and agent hijacking attacks
+- 📋 **Limited auditability** and operational visibility
+- ⚖️ **Compliance challenges** with **SOC 2**, **ISO 27001**, and the **EU AI Act**
+
+Without centralized monitoring and governance, autonomous AI agents can become costly, difficult to control, and challenging to secure.
+
+---
+
+## 🛡️ Why AgentWatch?
+
+**AgentWatch** is a **B2B SaaS AI Governance Platform** that acts as a real-time security and financial control layer between autonomous AI agents and external tools or APIs.
+
+It enables organizations to deploy AI agents safely by providing:
+
+- ⚡ **Sub-15 ms** real-time request inspection
+- 🛡️ Prompt injection detection and threat prevention
+- 💰 Velocity-based spending limits and budget controls
+- 🤖 Google Gemini-powered **Master Analyzer** for AI security audits
+- 🚨 One-click **Emergency Quick Freeze (Kill Switch)**
+- 📊 Complete audit logs and execution traceability
+- 📑 Automated compliance reporting for **SOC 2**, **ISO 27001**, and the **EU AI Act**
+
+AgentWatch empowers enterprises to scale autonomous AI systems with **security, transparency, compliance, and financial control**.
+
+---
+
 | Feature                    | Description                        |
 | -------------------------- | ---------------------------------- |
 | AI Firewall                | Intercepts every AI request        |
