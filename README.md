@@ -170,7 +170,25 @@ External APIs
 
 <img width="3001" height="1416" alt="Cassspture" src="https://github.com/user-attachments/assets/c65e7fe7-acda-4fd0-9f4b-c992085f1573" />
 
+## 🔮 Future Work & Enterprise Roadmap
 
+To scale AgentWatch from an innovative prototype into a bulletproof, enterprise-ready AI Governance engine, the upcoming development phases will focus on the following core pillars:
+
+### 1. Model-Agnostic LLM Gateway
+* **Universal Proxy Middleware:** Transition the firewall architecture into a completely model-agnostic gateway. 
+* **Multi-Provider Support:** Seamlessly intercept, analyze, and apply guardrails to agent loops built on OpenAI (GPT-4o), Anthropic (Claude), Cohere, and local open-source models (Llama 3/4) via a single unified API wrapper.
+
+### 2. Hybrid Security Layer & Deterministic Guards
+* **Multi-Tier Filtering:** Implement a low-latency, two-tier defense mechanism to eliminate the "AI auditing AI" vulnerability.
+* **Deterministic Rules (Layer 1):** Deploy ultra-fast regex parsing, signature matching, and vector-similarity databases to catch known prompt injections and system-prompt leak attempts in sub-5ms.
+* **Heuristic AI Analysis (Layer 2):** Route complex semantic ambiguities to the Google Gemini Master Analyzer only after passing Layer 1 filters.
+
+### 3. Enterprise Privacy: On-Premise SDK + Decentralized Control Plane
+* **Local Security SDK:** Develop an open-source, deployable SDK that enterprises can run locally inside their private VPCs (AWS, GCP, Azure) or local environments. This ensures sensitive API keys and raw logs never leave the client's secure perimeter.
+* **Cloud Control Plane:** Maintain a centralized, secure B2B SaaS dashboard to push global security policies, adjust spending budgets, and execute the **Emergency Quick Freeze (Kill Switch)** across all decentralized SDK instances instantly.
+
+### 4. High-Throughput Streaming Architecture
+* **Enterprise Scaling:** Migrate the backend data layers from Firebase to a high-concurrency architecture built for stream processing (e.g., Redis for real-time state caching and PostgreSQL/TimescaleDB for high-volume analytics ingestion).
 
 ## 🚀 How to Run the Project
 
