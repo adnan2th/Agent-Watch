@@ -1,0 +1,118 @@
+{
+  "entities": {
+    "Agent": {
+      "title": "Agent",
+      "description": "Autonomous AI agent tracked by AgentWatch",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "role": { "type": "string" },
+        "status": { "type": "string", "enum": ["Active", "Suspended", "Flagged", "Throttled", "Idle"] },
+        "riskScore": { "type": "number" },
+        "model": { "type": "string" },
+        "budgetLimit": { "type": "number" },
+        "currentSpend": { "type": "number" },
+        "department": { "type": "string" },
+        "lastActive": { "type": "string" },
+        "createdDate": { "type": "string" },
+        "promptInjectionRisk": { "type": "number" },
+        "anomalyRate": { "type": "number" }
+      },
+      "required": ["id", "name", "role", "status", "riskScore", "model", "budgetLimit", "currentSpend"]
+    },
+    "Transaction": {
+      "title": "Transaction",
+      "description": "Cross-agent financial transaction record",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "timestamp": { "type": "string" },
+        "agentId": { "type": "string" },
+        "agentName": { "type": "string" },
+        "recipient": { "type": "string" },
+        "amount": { "type": "number" },
+        "category": { "type": "string" },
+        "anomalyScore": { "type": "number" },
+        "status": { "type": "string", "enum": ["Approved", "Flagged", "Blocked", "Pending Review"] },
+        "reasoning": { "type": "string" },
+        "rawPayload": { "type": "string" }
+      },
+      "required": ["id", "timestamp", "agentId", "agentName", "recipient", "amount", "status"]
+    },
+    "Alert": {
+      "title": "Alert",
+      "description": "Security or anomaly alert triggered by an agent",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "timestamp": { "type": "string" },
+        "agentId": { "type": "string" },
+        "agentName": { "type": "string" },
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "severity": { "type": "string", "enum": ["Critical", "High", "Medium", "Low"] },
+        "status": { "type": "string", "enum": ["Active", "Acknowledged", "Resolved", "False Positive"] },
+        "threatVector": { "type": "string" },
+        "resolvedBy": { "type": "string" },
+        "resolvedAt": { "type": "string" }
+      },
+      "required": ["id", "timestamp", "agentId", "title", "severity", "status"]
+    },
+    "Report": {
+      "title": "Report",
+      "description": "Compliance and audit report center item",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "type": { "type": "string" },
+        "period": { "type": "string" },
+        "score": { "type": "number" },
+        "status": { "type": "string", "enum": ["Compliant", "Under Review", "Action Required", "Draft"] },
+        "generatedAt": { "type": "string" },
+        "summary": { "type": "string" },
+        "framework": { "type": "string" },
+        "author": { "type": "string" }
+      },
+      "required": ["id", "title", "type", "status", "generatedAt"]
+    },
+    "Setting": {
+      "title": "Setting",
+      "description": "Organization and governance configuration",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "companyName": { "type": "string" },
+        "globalMaxTransaction": { "type": "number" },
+        "autoFreezeThreshold": { "type": "number" },
+        "webhookUrl": { "type": "string" },
+        "requireDualApproval": { "type": "boolean" },
+        "securityEmail": { "type": "string" }
+      },
+      "required": ["id", "companyName"]
+    }
+  },
+  "firestore": {
+    "/agents/{agentId}": {
+      "schema": { "$ref": "#/entities/Agent" },
+      "description": "Collection of autonomous agents"
+    },
+    "/transactions/{transactionId}": {
+      "schema": { "$ref": "#/entities/Transaction" },
+      "description": "Collection of financial transactions"
+    },
+    "/alerts/{alertId}": {
+      "schema": { "$ref": "#/entities/Alert" },
+      "description": "Collection of security alerts"
+    },
+    "/reports/{reportId}": {
+      "schema": { "$ref": "#/entities/Report" },
+      "description": "Collection of compliance reports"
+    },
+    "/settings/{settingId}": {
+      "schema": { "$ref": "#/entities/Setting" },
+      "description": "Configuration settings"
+    }
+  }
+}

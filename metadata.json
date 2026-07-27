@@ -1,0 +1,6 @@
+{
+  "name": "AgentWatch",
+  "description": "Mission-control B2B AI Agent Governance, Risk Management, and Financial Audit Platform",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
