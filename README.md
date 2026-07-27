@@ -158,8 +158,17 @@ External APIs
 | AI         | Google Gemini |
 | Build Tool | Vite          |
 
+---
+
+## Screenshot
 
 <img width="3138" height="1444" alt="Capturdqe" src="https://github.com/user-attachments/assets/760824bf-1a7e-459d-bbf6-8a8d019aa8df" />
+
+<img width="3147" height="1451" alt="cw" src="https://github.com/user-attachments/assets/49c85ddb-16c1-44e2-9c1f-3f2d0c2b52af" />
+
+<img width="3041" height="1302" alt="Capteure" src="https://github.com/user-attachments/assets/af3f0a9f-0232-4313-899b-d09407f01aa7" />
+
+<img width="3001" height="1416" alt="Cassspture" src="https://github.com/user-attachments/assets/c65e7fe7-acda-4fd0-9f4b-c992085f1573" />
 
 
 
